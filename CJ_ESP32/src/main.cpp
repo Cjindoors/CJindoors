@@ -1,9 +1,16 @@
 #include <Arduino.h>
+#include "datos.h"
+
+voltaje voltajeBat(33);
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(9600);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+  float tension = voltajeBat.medirVoltaje();
+  Serial.println(String(tension));
+  delay(1000);
 }
