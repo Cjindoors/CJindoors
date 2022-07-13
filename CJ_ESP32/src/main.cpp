@@ -3,6 +3,7 @@
 
 voltaje voltajeBat(33);
 
+
 void setup() {
   Serial.begin(9600);
 
